@@ -1,0 +1,20 @@
+@import './../../../Varible.scss';
+
+.Card{
+    // border: 1rem solid #000;
+    width: fit-content;
+    &--picture{
+        border: .5rem solid $text--color--primary;
+        border-radius: 1.7rem;
+        width: 20rem;
+    }
+    &--text{
+        // display: inline;
+        font-size: 2rem;
+        color: $text--color--primary;
+    }
+    &--picture:hover{
+        margin-top: -8rem;
+        color: red;
+    }
+}

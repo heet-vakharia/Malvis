@@ -1,0 +1,19 @@
+@import './../Varible.scss';
+
+.home__navigator{
+    border-radius: 50%;
+    background:rgba($color--quaternary, $alpha: .7);
+   width: 5rem;
+   height: 5rem;
+    float: left;
+    bottom: 1rem;
+    right: 1rem;
+    position: fixed;
+   &--arrow{
+       font-size: 6rem;
+       color:$text--color--primary;
+   }
+   &:hover{
+    background:rgba($color--quaternary, $alpha: 1);
+   }
+}

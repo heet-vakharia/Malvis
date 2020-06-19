@@ -1,0 +1,69 @@
+$color--primary : #f9ed69;
+$color--secondary : #b83b5e;
+$color--tertiary: #6a2c70;
+$color--quaternary:#f08a5d;
+$text--color--primary:#212121;
+$text--color--secondary:#bdbdbd;
+$text--color--tertiary:#757575;
+$color--black:#000;
+
+@font-face{
+    font-family: 'TensoWOO';
+    src: url('../../../Assets/Fonts/Tenso\ W00\ Bold.ttf') format('truetype');
+}
+.Navbar{
+    
+    position: display;
+    &__heroImg{
+        width: 100vw;
+    }
+    &__items{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        font-family: TensoWOO;
+        letter-spacing: .2rem;
+        
+    }
+    &__nav{
+    width: 100%;
+    height: 3rem;
+    background-color: $color--black;
+    &--malvis{
+        
+        color: $color--secondary;
+        text-decoration: none;
+        &--A{
+            color:$color--primary;
+            
+        }
+        &:hover {
+            color: $color--tertiary;
+        }
+        &:hover &--A{
+            color: $color--quaternary;
+        }
+    }
+
+    &--item{
+        text-transform: uppercase;
+        margin: 0 2rem;
+        display: block;
+
+        &--link,&--right{
+            color: $text--color--secondary;
+            text-decoration: none;
+            &:hover{
+                color: $text--color--tertiary;
+            }
+         }
+        &--right{
+          position: absolute;
+          right: 1rem;
+        }
+    }
+    }
+    
+    
+
+}
